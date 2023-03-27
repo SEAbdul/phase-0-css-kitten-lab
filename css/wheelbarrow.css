@@ -22,7 +22,7 @@ img {
 }
 
 #wheelbarrow { 
-  position: relative;
+  position: absolute;
   background: url(../images/wheelbarrow.png) no-repeat;
   z-index: 0;
   top: 220px;
@@ -31,10 +31,15 @@ img {
   pointer-events: none;
   position: absolute;
   background: url(../images/wheelbarrow-foreground.png) no-repeat;
-  z-index: 10;
+  z-index: 0;
   top: 220px;
 }
 
-#basket, #ball {
+#basket, #ball, .kitty-1, #kitty-2, .kitty-5 {
   display: inline;
+  margin: auto;
+  position: absolute;
+  background: url(..images/wheelbarrow.png);
+  z-index: 100;
+  top: 220px;
 }
